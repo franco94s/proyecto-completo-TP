@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Logística SRL</title>
+    <link rel="shortcut icon" href="media/favicon.svg">
+    <link href="styles2.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+
+                                    <!--header-->
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="media/favicon.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">  LOGÍSTICA SRL.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#ancla1">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">COTIZACIÓN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#ancla2">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+                                    <!--form-->
+
+<form id="regForm" class="form-control">
+
+<h1>Solicita una cotización.</h1>
+<h6>Solicita un presupuesto para cualquiera de nuestros servicios logísticos.<br><br>Tan solo necesitamos conocer de forma detallada la operativa que necesitas realizar. Nosotros nos pondremos en contacto y analizaremos cómo realizarla.</h6><br>
+
+<div class="tab">
+  <p><input class="form-control" placeholder="Nombre y apellido..."></p>
+  <p><input class="form-control" placeholder="Nombre de la empresa..."></p>
+</div>
+
+<div class="tab">
+  <p><select class="form-control" required></p>
+    <option selected disabled value="">Tipo de servicio:</option>
+    <option value="1">Transporte terrestre</option>
+    <option value="2">Aduana</option>
+    <option value="3">Almacenamiento</option>
+    <option value="4">Seguro de carga</option>
+  </select>
+  <p><select class="form-control" required></p>
+    <option selected disabled value="">Tipo de operación:</option>
+    <option value="1">Exportación</option>
+    <option value="2">Importación</option>
+    <option value="3">Ambos</option>
+  </select>
+</div>
+
+<div class="tab">
+  <p><input class="form-control" placeholder="Lugar de origen de su carga:"></p>
+  <p><input class="form-control" placeholder="Lugar de destino de su carga:"></p>
+</div>
+
+<div class="tab">
+  <p><input class="form-control" placeholder="Correo electrónico..."></p>
+  <p><input class="form-check-input" type="checkbox" required> He leído y acepto los <a href="#">Términos y Condiciones.</a></p>
+</div>
+
+<div style="overflow:auto;">
+  <div style="float:right;">
+    <button type="button" class="btn btn-primary" id="prevBtn" onclick="nextPrev(-1)">Volver</button>
+    <button type="button" class="btn btn-primary" id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
+  </div>
+</div>
+
+<div style="text-align:center;margin-top:40px;">
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+</div>
+
+</form>
+
+
+                                    <!--footer-->
+
+      <div class="container">
+        <div class="row">
+          <footer class="d-flex flex-wrap justify-content-center align-items-center py-2 my-2 border-top ">
+            <p class="col-md-4 mb-0 text-muted" id="ancla2">&copy; 1990-2022 - Logística SRL. - <a href="">Política de Privacidad</a></p>
+          </footer>
+        </div>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>
